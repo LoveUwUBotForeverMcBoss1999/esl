@@ -32,18 +32,23 @@
             background: rgba(43, 43, 60, 0.9);
             border-radius: 10px;
             padding: 20px;
-            max-width: 250px; /* Smaller card width */
-            height: 350px; /* Taller card height */
+            max-width: 250px;
+            height: 350px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease, background 0.3s ease;
             position: relative;
-            overflow: hidden; /* Ensures any overflow is hidden */
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .reward-card img {
-            max-width: 80%;
-            margin: 10px auto;
-            display: block; /* Centers the image */
+            width: 100px;
+            height: 100px;
+            object-fit: cover; /* Ensures the image fills the square without distortion */
+            border-radius: 10px; /* Optional: rounded corners */
+            margin-bottom: 15px;
         }
 
         .reward-card h3 {
@@ -99,27 +104,22 @@
             <h1>Exciting Rewards Await!</h1>
             <div class="rewards">
                 <div class="reward-card">
-                    <img src="https://example.com/squirrel-image.png" alt="Squirrel Image"> <!-- Replace with your squirrel image URL -->
-                    <h3>Reward Title 1</h3>
-                    <p><strong>Description:</strong> Complete the following tasks to earn this reward. Get involved and show your skills!</p>
-                    <p><strong>Deadline:</strong> December 1, 2024</p>
-                    <a href="https://discord.com/channels/1300776300553965610/1300776897038385152/1302219755763011584">See More...</a>
+                    <img src="https://event-space-lounge.uwubot.online/imgs/owocash.jpg" alt="OwO 50,000 Cash">
+                    <h3>50,000 OwO Cash</h3>
+                    <p><strong>Description:</strong> Complete Event #01 to earn this reward! Get involved and showcase your skills in Brawlhalla!</p>
+                    <p><strong>Date:</strong> November 5, 2024</p>
+                    <p><strong>Host:</strong> McBoss</p>
+                    <a href="file:///C:/Users/User/Documents/esl/events.html">See More...</a>
                 </div>
                 <div class="reward-card">
-                    <img src="https://example.com/squirrel-image.png" alt="Squirrel Image"> <!-- Replace with your squirrel image URL -->
-                    <h3>Reward Title 2</h3>
-                    <p><strong>Description:</strong> Participate in our activities to qualify for this reward. Join the fun and be a winner!</p>
-                    <p><strong>Deadline:</strong> December 15, 2024</p>
-                    <a href="https://discord.com/channels/1300776300553965610/1300776897038385152/1302219755763011584">See More...</a>
+                    <img src="https://event-space-lounge.uwubot.online/imgs/epicgamer.png" alt="Epic Gamer Role">
+                    <h3>EPIC GAMER Role</h3>
+                    <p><strong>Description:</strong> Complete Event #01 to earn this reward! Get involved and showcase your skills in Brawlhalla!</p>
+                    <p><strong>Deadline:</strong> November 5, 2024</p>
+                    <p><strong>Host:</strong> McBoss</p>
+                    <a href="file:///C:/Users/User/Documents/esl/events.html">See More...</a>
                 </div>
-                <div class="reward-card">
-                    <img src="https://example.com/squirrel-image.png" alt="Squirrel Image"> <!-- Replace with your squirrel image URL -->
-                    <h3>Reward Title 3</h3>
-                    <p><strong>Description:</strong> Show your commitment and be rewarded! Check the tasks and make it happen!</p>
-                    <p><strong>Deadline:</strong> December 31, 2024</p>
-                    <a href="https://discord.com/channels/1300776300553965610/1300776897038385152/1302219755763011584">See More...</a>
-                </div>
-                <!-- Add more reward cards as needed -->
+                <!-- Additional reward cards can go here -->
             </div>
         </section>
     </main>
