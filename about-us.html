@@ -11,12 +11,12 @@
         body {
             font-family: Arial, sans-serif;
             background-image: url('https://event-space-lounge.uwubot.online/imgs/bg.gif'), linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-            background-size: cover;          /* Ensures the image covers the whole screen */
-            background-repeat: no-repeat;     /* Prevents the image from repeating */
-            background-attachment: fixed;     /* Keeps the background fixed when scrolling */
-            background-position: center;      /* Centers the background image */
-            background-blend-mode: overlay;   /* Applies the dark overlay on top of the image */
-            color: #ffffff;                   /* Sets default text color to white for contrast */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-blend-mode: overlay;
+            color: #ffffff;
         }
 
         .about-container {
@@ -44,6 +44,8 @@
             padding: 1.5rem;
             text-align: center;
             transition: transform 0.3s ease;
+            /* Add transparency with rgba colors */
+            background-color: rgba(0, 0, 0, 0.6); /* Fallback if transparency fails */
         }
         .feature-box:hover {
             transform: scale(1.05);
@@ -56,27 +58,27 @@
         .feature-box p {
             font-size: 1rem;
         }
-        /* Highlighted color styles for each feature */
+        /* Transparent colors for each feature */
         .feature-event-hosting {
-            background-color: #ff6f61; /* Vibrant coral for Event Hosting */
+            background-color: rgba(255, 111, 97, 0.70); /* Coral with 85% opacity */
         }
         .feature-event-promotion {
-            background-color: #4caf50; /* Green for Event Promotion */
+            background-color: rgba(76, 175, 80, 0.70); /* Green with 85% opacity */
         }
         .feature-community-support {
-            background-color: #ff9800; /* Orange for Community Support */
+            background-color: rgba(255, 152, 0, 0.70); /* Orange with 85% opacity */
         }
         .feature-game-streaming {
-            background-color: #3f51b5; /* Indigo for Game Streaming */
+            background-color: rgba(63, 81, 181, 0.70); /* Indigo with 85% opacity */
         }
         .feature-movie-streaming {
-            background-color: #9c27b0; /* Deep purple for Movie Streaming */
+            background-color: rgba(156, 39, 176, 0.70); /* Deep purple with 85% opacity */
         }
         .feature-free-stuff {
-            background-color: #e91e63; /* Pink for Free Stuff */
+            background-color: rgba(233, 30, 99, 0.70); /* Pink with 85% opacity */
         }
         .feature-giveaways {
-            background-color: #00bcd4; /* Cyan for Giveaways */
+            background-color: rgba(0, 188, 212, 0.70); /* Cyan with 85% opacity */
         }
     </style>
 </head>
