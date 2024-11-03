@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Space Lounge (ESL) - Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Event Space Lounge</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about-us">About</a></li>
+                <li><a href="/team">Team</a></li>
+                <li><a href="/events">Events</a></li>
+                <li><a href="/movie-events">Movie Events</a></li>
+                <li><a href="/rewards">Rewards</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="events-section">
+            <h1>Upcoming Events</h1>
+            <div class="event-cards">
+                <div class="event-card">
+                    <h3>Gaming Marathon</h3>
+                    <p>Location: <a href="https://discord.gg/voice">#Voice Channel</a></p>
+                    <p>Chat Area: <a href="https://discord.gg/text">#Text Channel</a></p>
+                    <p>Host: @GamerMaster</p>
+                    <p>Description: Join us for an all-day gaming marathon featuring popular multiplayer games!</p>
+                    <p>Start Date: November 10, 2024</p>
+                    <p>Start Time: 10:00 AM</p>
+                    <div class="card-footer">
+                        <span>See you there!</span>
+                    </div>
+                </div>
+                <!-- Additional example cards -->
+                <div class="event-card">
+                    <h3>Movie Night</h3>
+                    <p>Location: <a href="https://discord.gg/voice">#Voice Channel</a></p>
+                    <p>Chat Area: <a href="https://discord.gg/text">#Text Channel</a></p>
+                    <p>Host: @MovieBuff</p>
+                    <p>Description: Relax and enjoy a community movie night with some popcorn!</p>
+                    <p>Start Date: November 15, 2024</p>
+                    <p>Start Time: 7:00 PM</p>
+                    <div class="card-footer">
+                        <span>Grab your snacks!</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Event Space Lounge. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+            }
+        }
+    </script>
+
+    <style>
+        /* Section styling */
+        .events-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .events-section h1 {
+            color: #76b5c5;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        /* Event card container styling */
+        .event-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Individual event card styling */
+        .event-card {
+            background: linear-gradient(135deg, #353545, #1e1e2f);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            padding: 20px;
+            max-width: 280px;
+            width: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Card Header Styling */
+        .event-card h3 {
+            color: #76b5c5;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Card Text Links */
+        .event-card p a {
+            color: #a6e3e9;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+        .event-card p a:hover {
+            color: #76b5c5;
+        }
+
+        /* Card Footer Styling */
+        .card-footer {
+            border-top: 1px solid #2a2a38;
+            margin-top: 15px;
+            padding-top: 10px;
+            color: #a0a0b0;
+            font-style: italic;
+            text-align: center;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .event-card {
+                width: calc(100% - 40px);
+                margin: 10px 0;
+            }
+        }
+    </style>
+</body>
+</html>

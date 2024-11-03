@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Space Lounge (ESL) - Home</title>
+    <meta name="description" content="Event Space Lounge - Hosting gaming events, giveaways, movie nights, streams, and more!">
+    <link rel="icon" href="https://uwubot.online/img/ESL.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Event Space Lounge</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about-us">About</a></li>
+                <li><a href="/team">Team</a></li>
+                <li><a href="/events">Events</a></li>
+                <li><a href="/movie-events">Movie Events</a></li>
+                <li><a href="/rewards">Rewards</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Welcome Section -->
+        <section class="welcome-container">
+            <div class="welcome-content">
+                <h1 class="welcome-title">Welcome to Event Space Lounge</h1>
+                <p class="welcome-subtitle">The best event hosters for gaming, giveaways, movie nights, and more.</p>
+            </div>
+            <!-- Decorative circles -->
+            <div class="decorative-circle circle-1"></div>
+            <div class="decorative-circle circle-2"></div>
+            <div class="welcome-overlay"></div>
+        </section>
+        
+        <br>
+
+        <section class="what-we-do">
+            <h2>What We Do in <strong><span style="color: rgb(38, 192, 0);">ESL</span></strong></h2>
+            <div class="activities-container">
+                <div class="activity-card">
+                    <h3>Chat & Networking</h3>
+                    <p>Connect with others, share your Discord servers, Minecraft servers, YouTube channels, and more!</p>
+                </div>
+                <div class="activity-card">
+                    <h3>Events & Giveaways</h3>
+                    <p>Participate in our giveaways, fun events, and enjoy exclusive perks.</p>
+                </div>
+                <div class="activity-card">
+                    <h3>Movie Nights</h3>
+                    <p>Kick back with movie nights and chill with friends!</p>
+                </div>
+                <div class="activity-card">
+                    <h3>Free Stuff</h3>
+                    <p>Grab freebies and exclusive in-game items when available.</p>
+                </div>
+                <div class="activity-card">
+                    <h3>Game Nights & Game VCs</h3>
+                    <p>Join us in regular game nights and chat in game voice calls!</p>
+                </div>
+                <div class="activity-card">
+                    <h3>Public Game Events</h3>
+                    <p>Get involved in open events and play with the community.</p>
+                </div>
+                <div class="activity-card">
+                    <h3>Game Schedules</h3>
+                    <p>Check out our schedules to see what games we're playing next!</p>
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <!-- Discord Invite Section -->
+        <section class="discord-invite">
+            <div class="invite-content">
+                <h2>Join Our Discord Community!</h2>
+                <p>Be a part of <strong><span style="color: rgb(38, 192, 0);">Event Space Lounge</span></strong> and stay updated with all our events and activities.</p>
+                <a href="https://discord.gg/jDzTzWZZ76" class="invite-button">Join Us on Discord</a>
+            </div>
+        </section>
+
+
+        <br>
+        <br>        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Event Space Lounge. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+            }
+        }
+    </script>
+</body>
+</html>

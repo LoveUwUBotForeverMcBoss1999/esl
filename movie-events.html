@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Space Lounge (ESL) - Movie Events</title>
+    <meta name="description" content="Join us for exciting movie events at the Event Space Lounge!">
+    <link rel="icon" href="https://uwubot.online/img/ESL.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Movie Events Section Styling */
+        .movie-events-container {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.8); /* Dark background for cinematic feel */
+        }
+
+        .movie-events-container h1 {
+            font-size: 2.5em;
+            color: #76b5c5;
+            margin-bottom: 30px;
+        }
+
+        .movie-events {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .movie-card {
+            background: rgba(43, 43, 60, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 300px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .movie-card h3 {
+            font-size: 1.6em;
+            color: #76b5c5;
+            margin: 15px 0;
+        }
+
+        .movie-card p {
+            color: #a0a0b0;
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
+
+        .movie-poster {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .movie-card:hover {
+            transform: translateY(-5px);
+            background: rgba(53, 53, 69, 0.95);
+        }
+
+        /* Responsive styling for movie events section */
+        @media (max-width: 768px) {
+            .movie-card {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Event Space Lounge</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about-us">About</a></li>
+                <li><a href="/team">Team</a></li>
+                <li><a href="/events">Events</a></li>
+                <li><a href="/movie-events">Movie Events</a></li>
+                <li><a href="/rewards">Rewards</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="movie-events-container">
+            <h1>Upcoming Movie Events</h1>
+            <div class="movie-events">
+                <div class="movie-card">
+                    <img src="movie-posters/Naruto Shippūden the Movie.jpg" alt="Movie Title 1" class="movie-poster">
+                    <h3>Movie Title 1</h3>
+                    <p><strong>Date:</strong> November 10, 2024</p>
+                    <p><strong>Time:</strong> 7:00 PM</p>
+                    <p><strong>Location:</strong> <a href="https://your-vc-link.com" target="_blank" style="color: #76b5c5;">Join Here</a></p>
+                    <p><strong>Host:</strong> John Doe</p>
+                    <p>Description: Join us for a thrilling screening of Movie Title 1! Don’t miss the excitement.</p>
+                </div>
+                <div class="movie-card">
+                    <img src="movie-posters/Rampage.jpg" alt="Movie Title 2" class="movie-poster">
+                    <h3>Movie Title 2</h3>
+                    <p><strong>Date:</strong> November 17, 2024</p>
+                    <p><strong>Time:</strong> 5:00 PM</p>
+                    <p><strong>Location:</strong> <a href="https://your-vc-link.com" target="_blank" style="color: #76b5c5;">Join Here</a></p>
+                    <p><strong>Host:</strong> Jane Smith</p>
+                    <p>Description: Experience the drama of Movie Title 2 with your friends at ESL!</p>
+                </div>
+                <div class="movie-card">
+                    <img src="movie-posters/Titanic.jpg" alt="Movie Title 3" class="movie-poster">
+                    <h3>Movie Title 3</h3>
+                    <p><strong>Date:</strong> November 24, 2024</p>
+                    <p><strong>Time:</strong> 8:00 PM</p>
+                    <p><strong>Location:</strong> <a href="https://your-vc-link.com" target="_blank" style="color: #76b5c5;">Join Here</a></p>
+                    <p><strong>Host:</strong> Alex Johnson</p>
+                    <p>Description: Don’t miss the captivating story of Movie Title 3. Join us for a fun movie night!</p>
+                </div>
+                <!-- Add more movie cards as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Event Space Lounge. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+</body>
+</html>

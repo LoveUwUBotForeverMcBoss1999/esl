@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Space Lounge (ESL) - Rewards</title>
+    <meta name="description" content="Explore exciting rewards and how to win them at the Event Space Lounge!">
+    <link rel="icon" href="https://uwubot.online/img/ESL.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Rewards Section Styling */
+        .rewards-container {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .rewards-container h1 {
+            font-size: 2.5em;
+            color: #76b5c5;
+            margin-bottom: 30px;
+        }
+
+        .rewards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .reward-card {
+            background: rgba(43, 43, 60, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 250px; /* Smaller card width */
+            height: 350px; /* Taller card height */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background 0.3s ease;
+            position: relative;
+            overflow: hidden; /* Ensures any overflow is hidden */
+        }
+
+        .reward-card img {
+            max-width: 80%;
+            margin: 10px auto;
+            display: block; /* Centers the image */
+        }
+
+        .reward-card h3 {
+            font-size: 1.6em;
+            color: #76b5c5;
+            margin: 15px 0;
+        }
+
+        .reward-card p {
+            color: #a0a0b0;
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
+
+        .reward-card a {
+            color: #76b5c5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .reward-card:hover {
+            transform: translateY(-5px);
+            background: rgba(53, 53, 69, 0.95);
+        }
+
+        /* Responsive styling for rewards section */
+        @media (max-width: 768px) {
+            .reward-card {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Event Space Lounge</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about-us">About</a></li>
+                <li><a href="/team">Team</a></li>
+                <li><a href="/events">Events</a></li>
+                <li><a href="/movie-events">Movie Events</a></li>
+                <li><a href="/rewards">Rewards</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="rewards-container">
+            <h1>Exciting Rewards Await!</h1>
+            <div class="rewards">
+                <div class="reward-card">
+                    <img src="https://example.com/squirrel-image.png" alt="Squirrel Image"> <!-- Replace with your squirrel image URL -->
+                    <h3>Reward Title 1</h3>
+                    <p><strong>Description:</strong> Complete the following tasks to earn this reward. Get involved and show your skills!</p>
+                    <p><strong>Deadline:</strong> December 1, 2024</p>
+                    <a href="https://discord.com/channels/1300776300553965610/1300776897038385152/1302219755763011584">See More...</a>
+                </div>
+                <div class="reward-card">
+                    <img src="https://example.com/squirrel-image.png" alt="Squirrel Image"> <!-- Replace with your squirrel image URL -->
+                    <h3>Reward Title 2</h3>
+                    <p><strong>Description:</strong> Participate in our activities to qualify for this reward. Join the fun and be a winner!</p>
+                    <p><strong>Deadline:</strong> December 15, 2024</p>
+                    <a href="https://discord.com/channels/1300776300553965610/1300776897038385152/1302219755763011584">See More...</a>
+                </div>
+                <div class="reward-card">
+                    <img src="https://example.com/squirrel-image.png" alt="Squirrel Image"> <!-- Replace with your squirrel image URL -->
+                    <h3>Reward Title 3</h3>
+                    <p><strong>Description:</strong> Show your commitment and be rewarded! Check the tasks and make it happen!</p>
+                    <p><strong>Deadline:</strong> December 31, 2024</p>
+                    <a href="https://discord.com/channels/1300776300553965610/1300776897038385152/1302219755763011584">See More...</a>
+                </div>
+                <!-- Add more reward cards as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Event Space Lounge. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+</body>
+</html>

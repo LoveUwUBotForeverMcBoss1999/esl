@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Space Lounge (ESL) - Team</title>
+    <meta name="description" content="Meet the Event Space Lounge Team - The people behind the events and community activities.">
+    <link rel="icon" href="https://uwubot.online/img/ESL.png" type="image/png">
+    <style>
+        /* Base styles for the body and background animation */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(145deg, #121218, #1e1e2f, #353545, #1e1e2f);
+            background-size: 400% 400%;
+            animation: backgroundAnimation 20s ease infinite;
+            color: #ffffff;
+        }
+
+        /* Keyframes for smooth gradient movement */
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Header styling */
+        header {
+            background: rgba(18, 18, 24, 0.8);
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Navigation styling */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #76b5c5;
+            transition: color 0.3s;
+        }
+
+        .logo:hover {
+            color: #a6e3e9;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin-left: auto;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1em;
+            padding: 5px 0;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #76b5c5;
+            transform: translateY(-2px);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+        /* Team section styling */
+        .team-container {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .team-container h1 {
+            font-size: 2.5em;
+            color: #76b5c5;
+            margin-bottom: 30px;
+        }
+
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .team-card {
+            background: rgba(43, 43, 60, 0.9);
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 250px;
+            width: 100%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            transition: transform 0.3s ease, background 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team-card h3 {
+            font-size: 1.5em;
+            color: #76b5c5;
+            margin: 15px 0;
+        }
+
+        .team-card p {
+            color: #a0a0b0;
+            font-size: 1em;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            background: rgba(53, 53, 69, 0.95);
+        }
+
+        .team-card:hover .profile-pic {
+            transform: scale(1.1);
+        }
+
+        /* Responsive styling for team section */
+        @media (max-width: 768px) {
+            .team-members {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .team-card {
+                width: 80%;
+            }
+        }
+
+        footer {
+            background: rgba(18, 18, 24, 0.8);
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #a0a0b0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Event Space Lounge</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about-us">About</a></li>
+                <li><a href="/team">Team</a></li>
+                <li><a href="/events">Events</a></li>
+                <li><a href="/movie-events">Movie Events</a></li>
+                <li><a href="/rewards">Rewards</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="team-container">
+            <h1>Meet Our Team</h1>
+            <div class="team-members">
+                <div class="team-card">
+                    <img src="avatars/mcboss.gif" alt="Profile of McBoss" class="profile-pic">
+                    <h3>McBoss</h3>
+                    <p style="color: black;">mcboss_99</p>
+                    <p>Founder, Owner, and Event Coordinator. Passionate about creating fun, interactive events for everyone! And the person who works more than 40% of the server.</p>
+                </div>
+                <div class="team-card">
+                    <img src="avatars/wclob.png" alt="Profile of Wclob" class="profile-pic">
+                    <h3>Wclob</h3>
+                    <p style="color: black;">wclob_29513</p>
+                    <p>Team Leader. Owner and Community Manager. Keeping the community engaging and connected. Full server manager. Event helper. ESL Video maker.</p>
+                </div>
+                <div class="team-card">
+                    <img src="avatars/eden.gif" alt="Profile of XiaoEden" class="profile-pic">
+                    <h3>XiaoEden</h3>
+                    <p style="color: black;">notxiaoeden</p>
+                    <p>Helper, Support Team Supreme Powers, Exclusive, Director, Management Director, Head Moderator, and Moderator.</p>
+                </div>
+                <div class="team-card">
+                    <img src="avatars/umair.jpg" alt="Profile of Umair" class="profile-pic">
+                    <h3>Umair</h3>
+                    <p style="color: black;">umairgamerpro1</p>
+                    <p>Helper and Moderator. The one who takes care of chats and members.</p>
+                </div>
+                <div class="team-card">
+                    <img src="avatars/senju.png" alt="Profile of Senju" class="profile-pic">
+                    <h3>SENUJA</h3>
+                    <p style="color: black;">senuja0620</p>
+                    <p>Server Graphic Designer.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Event Space Lounge. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Event Space Lounge (ESL)</title>
+    <meta name="description" content="Discover what makes Event Space Lounge special – a vibrant community with events, gaming, streaming, and more!">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+        .about-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #0066ff;
+        }
+        .feature-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .feature-box {
+            flex: 1 1 280px;
+            max-width: 300px;
+            color: #fff;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .feature-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .feature-box h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+        .feature-box p {
+            font-size: 1rem;
+        }
+        /* Highlighted color styles for each feature */
+        .feature-event-hosting {
+            background-color: #ff6f61; /* Vibrant coral for Event Hosting */
+        }
+        .feature-event-promotion {
+            background-color: #4caf50; /* Green for Event Promotion */
+        }
+        .feature-community-support {
+            background-color: #ff9800; /* Orange for Community Support */
+        }
+        .feature-game-streaming {
+            background-color: #3f51b5; /* Indigo for Game Streaming */
+        }
+        .feature-movie-streaming {
+            background-color: #9c27b0; /* Deep purple for Movie Streaming */
+        }
+        .feature-free-stuff {
+            background-color: #e91e63; /* Pink for Free Stuff */
+        }
+        .feature-giveaways {
+            background-color: #00bcd4; /* Cyan for Giveaways */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Event Space Lounge</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about-us">About</a></li>
+                <li><a href="/team">Team</a></li>
+                <li><a href="/events">Events</a></li>
+                <li><a href="/movie-events">Movie Events</a></li>
+                <li><a href="/rewards">Rewards</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-container">
+            <h1>About Us - Event Space Lounge!</h1>
+            <p>We're a community for gamers, streamers, and event enthusiasts. Discover our best features below!</p>
+            <div class="feature-container">
+                <div class="feature-box feature-event-hosting">
+                    <h3>Event Hosting</h3>
+                    <p>We host a range of exciting events for gamers and creators, making every moment unforgettable!</p>
+                </div>
+                <div class="feature-box feature-event-promotion">
+                    <h3>Event Promotion</h3>
+                    <p>Supporting community events across Discord, helping organizers reach a bigger audience.</p>
+                </div>
+                <div class="feature-box feature-community-support">
+                    <h3>Community Support</h3>
+                    <p>Helping other servers organize and manage their events efficiently with our resources.</p>
+                </div>
+                <div class="feature-box feature-game-streaming">
+                    <h3>Game Streaming</h3>
+                    <p>Join us for live gaming streams and share the excitement with fellow gamers!</p>
+                </div>
+                <div class="feature-box feature-movie-streaming">
+                    <h3>Movie Streaming</h3>
+                    <p>Unwind with movie nights – a perfect way to relax with the community after a day of gaming.</p>
+                </div>
+                <div class="feature-box feature-free-stuff">
+                    <h3>Free Stuff</h3>
+                    <p>Enjoy exclusive giveaways, free items, and special deals for community members!</p>
+                </div>
+                <div class="feature-box feature-giveaways">
+                    <h3>Giveaway Hosting</h3>
+                    <p>Regular giveaways with awesome prizes – don’t miss out on your chance to win!</p>
+                </div>
+                <!-- Additional feature boxes can be added here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Event Space Lounge. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+</body>
+</html>
