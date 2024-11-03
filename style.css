@@ -237,9 +237,12 @@ footer {
     padding: 0;
     overflow: hidden;
     border-radius: 20px;
-    background: linear-gradient(135deg, #4A90E2, #9013FE);
+    background: rgba(65, 250, 163, 0.5); /* Semi-transparent background */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background-size: 200% 200%;
+    animation: gradientAnimation 15s ease infinite;
 }
+
 
 .welcome-content {
     position: relative;
