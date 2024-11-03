@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="https://uwubot.online/img/ESL_text.jpg">
     <title>404 - Page Not Found</title>
     <style>
         body {
@@ -70,5 +69,15 @@
         <p>Oops! The page you're looking for doesn't exist.</p>
         <a href="/" class="home-button">Back to Home</a>
     </div>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+            }
+        }
+    </script>
 </body>
 </html>
