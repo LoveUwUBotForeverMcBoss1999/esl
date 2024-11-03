@@ -1,12 +1,27 @@
 /* Base styles for the body and background animation */
+/* style.css */
+
+/* Set background image for the entire body */
 body {
+    background-image: url('https://event-space-lounge.uwubot.online/imgs/bg.gif'), linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background-size: cover;       /* Ensures the image covers the whole screen */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    background-position: center;  /* Centers the background image */
+    background-blend-mode: overlay; /* Applies dark overlay */
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(145deg, #121218, #1e1e2f, #353545, #1e1e2f);
-    background-size: 400% 400%;
-    animation: backgroundAnimation 20s ease infinite;
-    color: #ffffff;
+    font-family: Arial, sans-serif; /* Optional: Set a default font */
+    color: #fff; /* Optional: Set default text color for readability */
+}
+
+/* Optional styling for your content (adjust as needed) */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a translucent background to content for readability */
+    border-radius: 10px;
 }
 
 /* Keyframes for smooth gradient movement */
